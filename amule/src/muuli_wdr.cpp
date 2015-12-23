@@ -4793,205 +4793,37 @@ wxBitmap connImages( size_t index )
 {
     if (index == 0)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #ED535B",
-        "@	c #D14E54",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "   ..           ",
-        "   ....         ",
-        "....++..        ",
-        ".++++++@.       ",
-        ".++++++@.       ",
-        "....++..        ",
-        "   ....         ",
-        "   ..           "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_0.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     if (index == 1)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #FFCA28",
-        "@	c #D1AF39",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "   ..           ",
-        "   ....         ",
-        "....++..        ",
-        ".++++++@.       ",
-        ".++++++@.       ",
-        "....++..        ",
-        "   ....         ",
-        "   ..           "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_1.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     if (index == 2)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #F57C00",
-        "@	c #C57119",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "   ..           ",
-        "   ....         ",
-        "....++..        ",
-        ".++++++@.       ",
-        ".++++++@.       ",
-        "....++..        ",
-        "   ....         ",
-        "   ..           "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_2.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     if (index == 3)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #A5DC30",
-        "@	c #8BBC32",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "   ..           ",
-        "   ....         ",
-        "....++..        ",
-        ".++++++@.       ",
-        ".++++++@.       ",
-        "....++..        ",
-        "   ....         ",
-        "   ..           "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_3.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     if (index == 4)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #ED535B",
-        "@	c #D14E54",
-        "           ..   ",
-        "         ....   ",
-        "        ..++....",
-        "       .@++++++.",
-        "       .@++++++.",
-        "        ..++....",
-        "         ....   ",
-        "           ..   ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_4.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     if (index == 5)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #FFCA28",
-        "@	c #D1AF39",
-        "           ..   ",
-        "         ....   ",
-        "        ..++....",
-        "       .@++++++.",
-        "       .@++++++.",
-        "        ..++....",
-        "         ....   ",
-        "           ..   ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_5.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     if (index == 6)
     {
-        /* XPM */
-        static const char *xpm_data[] = {
-        "16 16 4 1",
-        " 	c None",
-        ".	c #262626",
-        "+	c #A5DC30",
-        "@	c #8BBC32",
-        "           ..   ",
-        "         ....   ",
-        "        ..++....",
-        "       .@++++++.",
-        "       .@++++++.",
-        "        ..++....",
-        "         ....   ",
-        "           ..   ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                ",
-        "                "
-        };
-        wxBitmap bitmap( xpm_data );
+        wxBitmap bitmap("pixmaps/connImages_6.png", wxBITMAP_TYPE_PNG);
         return bitmap;
     }
     return wxNullBitmap;
