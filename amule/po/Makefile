@@ -1,35 +1,19 @@
-# Makefile for PO directory in any package using GNU gettext.
-# Copyright (C) 1995-1997, 2000-2002 by Ulrich Drepper <drepper@gnu.ai.mit.edu>
-#
-# This file can be copied and used freely without restrictions.  It can
-# be used in projects which are not available under the GNU General Public
-# License but which still want to provide support for the GNU gettext
-# functionality.
-# Please note that the actual code of GNU gettext is covered by the GNU
-# General Public License and is *not* in the public domain.
-
+MAKEFLAGS=-s --no-print-directory
 PACKAGE = amule
 VERSION = SVN
-
 SHELL = /bin/sh
-
-
 srcdir = .
 top_srcdir = ..
-
-
 prefix = /usr/local
 exec_prefix = ${prefix}
 datadir = ${datarootdir}
 datarootdir = ${prefix}/share
 localedir = $(datadir)/locale
 gettextsrcdir = $(datadir)/gettext/po
-
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 MKINSTALLDIRS = ./mkinstalldirs
 mkinstalldirs = $(SHELL) `case "$(MKINSTALLDIRS)" in /*) echo "$(MKINSTALLDIRS)" ;; *) echo "$(top_builddir)/$(MKINSTALLDIRS)" ;; esac`
-
 GMSGFMT = /usr/bin/msgfmt
 MSGFMT = /usr/bin/msgfmt
 XGETTEXT = /usr/bin/xgettext
@@ -38,7 +22,6 @@ MSGMERGE_UPDATE = /usr/bin/msgmerge --update
 MSGINIT = msginit
 MSGCONV = msgconv
 MSGFILTER = msgfilter
-
 POFILES =  ar.po ast.po bg.po ca.po cs.po da.po de.po el.po en_GB.po es.po et_EE.po eu.po fi.po fr.po gl.po he.po hr.po hu.po it.po it_CH.po ja.po ko_KR.po lt.po nl.po nn.po pl.po pt_BR.po pt_PT.po ro.po ru.po sl.po sq.po sv.po tr.po uk.po zh_CN.po zh_TW.po
 GMOFILES =  ar.gmo ast.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo en_GB.gmo es.gmo et_EE.gmo eu.gmo fi.gmo fr.gmo gl.gmo he.gmo hr.gmo hu.gmo it.gmo it_CH.gmo ja.gmo ko_KR.gmo lt.gmo nl.gmo nn.gmo pl.gmo pt_BR.gmo pt_PT.gmo ro.gmo ru.gmo sl.gmo sq.gmo sv.gmo tr.gmo uk.gmo zh_CN.gmo zh_TW.gmo
 UPDATEPOFILES =  ar.po-update ast.po-update bg.po-update ca.po-update cs.po-update da.po-update de.po-update el.po-update en_GB.po-update es.po-update et_EE.po-update eu.po-update fi.po-update fr.po-update gl.po-update he.po-update hr.po-update hu.po-update it.po-update it_CH.po-update ja.po-update ko_KR.po-update lt.po-update nl.po-update nn.po-update pl.po-update pt_BR.po-update pt_PT.po-update ro.po-update ru.po-update sl.po-update sq.po-update sv.po-update tr.po-update uk.po-update zh_CN.po-update zh_TW.po-update
@@ -48,7 +31,6 @@ $(DISTFILES.common.extra1) $(DISTFILES.common.extra2) $(DISTFILES.common.extra3)
 DISTFILES = $(DISTFILES.common) POTFILES.in $(DOMAIN).pot \
 $(POFILES) $(GMOFILES) \
 $(DISTFILES.extra1) $(DISTFILES.extra2) $(DISTFILES.extra3)
-
 POTFILES = \
      ../src/AddFriend.cpp \
      ../src/amuleAppCommon.cpp \
@@ -142,64 +124,33 @@ POTFILES = \
      ../src/utils/wxCas/src/wxcasprefs.cpp \
      ../src/webserver/src/WebInterface.cpp \
      ../src/webserver/src/WebServer.cpp
-
 CATALOGS =  ar.gmo ast.gmo bg.gmo ca.gmo cs.gmo da.gmo de.gmo el.gmo en_GB.gmo es.gmo et_EE.gmo eu.gmo fi.gmo fr.gmo gl.gmo he.gmo hr.gmo hu.gmo it.gmo it_CH.gmo ja.gmo ko_KR.gmo lt.gmo nl.gmo nn.gmo pl.gmo pt_BR.gmo pt_PT.gmo ro.gmo ru.gmo sl.gmo sq.gmo sv.gmo tr.gmo uk.gmo zh_CN.gmo zh_TW.gmo
-
-# Makevars gets inserted here. (Don't remove this line!)
-# Makefile variables for PO directory in any package using GNU gettext.
-
-# Usually the message domain is the same as the package name.
 DOMAIN = $(PACKAGE)
-
-# These two variables depend on the location of this directory.
 subdir = po
 top_builddir = ..
-
-# These options get passed to xgettext.
 XGETTEXT_OPTIONS = --keyword=_ --keyword=wxTRANSLATE --keyword=wxPLURAL:1,2
-
-# This is the copyright holder that gets inserted into the header of the
-# $(DOMAIN).pot file.  Set this to the copyright holder of the surrounding
-# package.  (Note that the msgstr strings, extracted from the package's
-# sources, belong to the copyright holder of the package.)  Translators are
-# expected to transfer the copyright for their translations to this person
-# or entity, or to disclaim their copyright.  The empty string stands for
-# the public domain; in this case the translators are expected to disclaim
-# their copyright.
 COPYRIGHT_HOLDER = Free Software Foundation, Inc.
-
-# This is the list of locale categories, beyond LC_MESSAGES, for which the
-# message catalogs shall be used.  It is usually empty.
 EXTRA_LOCALE_CATEGORIES =
-
 .SUFFIXES:
 .SUFFIXES: .po .gmo .mo .sed .sin .nop .po-update
-
 .po.mo:
-	@echo "$(MSGFMT) -c -o $@ $<"; \
+	echo "Generating translations for $(<F:.po=)"
+	@echo "$(MSGFMT) -c -o $@ $<">/dev/null; \
 	$(MSGFMT) -c -o t-$@ $< && mv t-$@ $@
-
 .po.gmo:
+	echo "Generating translations for $(<F:.po=)"
 	@lang=`echo $* | sed -e 's,.*/,,'`; \
 	test "$(srcdir)" = . && cdcmd="" || cdcmd="cd $(srcdir) && "; \
-	echo "$${cdcmd}rm -f $${lang}.gmo && $(GMSGFMT) -c --statistics -o $${lang}.gmo $${lang}.po"; \
-	cd $(srcdir) && rm -f $${lang}.gmo && $(GMSGFMT) -c --statistics -o t-$${lang}.gmo $${lang}.po && mv t-$${lang}.gmo $${lang}.gmo
-
+	echo "$${cdcmd}rm -f $${lang}.gmo && $(GMSGFMT) -c  -o $${lang}.gmo $${lang}.po">/dev/null; \
+	cd $(srcdir) && rm -f $${lang}.gmo && $(GMSGFMT) -c  -o t-$${lang}.gmo $${lang}.po && mv t-$${lang}.gmo $${lang}.gmo
 .sin.sed:
 	sed -e '/^#/d' $< > t-$@
 	mv t-$@ $@
-
-
 all: all-yes
-
 all-yes: $(CATALOGS)
 all-no:
-
-# Note: Target 'all' must not depend on target '$(DOMAIN).pot-update',
-# otherwise packages like GCC can not be built if only parts of the source
-# have been downloaded.
-
 $(DOMAIN).pot-update: $(POTFILES) $(srcdir)/POTFILES.in remove-potcdate.sed
+	echo "Updating translation catalog template"
 	$(XGETTEXT) --default-domain=$(DOMAIN) --directory=$(top_srcdir) \
 	  --add-comments=TRANSLATORS: $(XGETTEXT_OPTIONS) \
 	  --files-from=$(srcdir)/POTFILES.in \
@@ -218,23 +169,21 @@ $(DOMAIN).pot-update: $(POTFILES) $(srcdir)/POTFILES.in remove-potcdate.sed
 	    mv $(DOMAIN).po $(srcdir)/$(DOMAIN).pot; \
 	  fi; \
 	}
-
 $(srcdir)/$(DOMAIN).pot:
 	$(MAKE) $(DOMAIN).pot-update
-
 $(POFILES): $(srcdir)/$(DOMAIN).pot
+	echo "Updating translation catalog for $(@F:.po=)"
 	@lang=`echo $@ | sed -e 's,.*/,,' -e 's/\.po$$//'`; \
 	test "$(srcdir)" = . && cdcmd="" || cdcmd="cd $(srcdir) && "; \
-	echo "$${cdcmd}$(MSGMERGE_UPDATE) $${lang}.po $(DOMAIN).pot"; \
-	cd $(srcdir) && $(MSGMERGE_UPDATE) $${lang}.po $(DOMAIN).pot
-
-
+	echo "$${cdcmd}$(MSGMERGE_UPDATE) --silent $${lang}.po $(DOMAIN).pot">/dev/null; \
+	cd $(srcdir) && $(MSGMERGE_UPDATE) --silent $${lang}.po $(DOMAIN).pot
 install: install-exec install-data
 install-exec:
 install-data: install-data-yes
 	if test "$(PACKAGE)" = "gettext"; then \
-	  $(mkinstalldirs) $(DESTDIR)$(gettextsrcdir); \
+	  $(mkinstalldirs) $(DESTDIR)$(gettextsrcdir)>/dev/null; \
 	  for file in $(DISTFILES.common); do \
+	    $(INSTALL_DATA) $(srcdir)/$$file \
 	    $(INSTALL_DATA) $(srcdir)/$$file \
 			    $(DESTDIR)$(gettextsrcdir)/$$file; \
 	  done; \
@@ -243,16 +192,17 @@ install-data: install-data-yes
 	fi
 install-data-no: all
 install-data-yes: all
-	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)>/dev/null
 	@catalogs='$(CATALOGS)'; \
 	for cat in $$catalogs; do \
 	  cat=`basename $$cat`; \
 	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
 	  dir=$(localedir)/$$lang/LC_MESSAGES; \
-	  $(mkinstalldirs) $(DESTDIR)$$dir; \
+	  $(mkinstalldirs) $(DESTDIR)$$dir>/dev/null; \
 	  if test -r $$cat; then realcat=$$cat; else realcat=$(srcdir)/$$cat; fi; \
+	echo "Installing $$dir/$(DOMAIN).mo"; \
 	  $(INSTALL_DATA) $$realcat $(DESTDIR)$$dir/$(DOMAIN).mo; \
-	  echo "installing $$realcat as $(DESTDIR)$$dir/$(DOMAIN).mo"; \
+	  echo "installing $$realcat as $(DESTDIR)$$dir/$(DOMAIN).mo">/dev/null; \
 	  for lc in '' $(EXTRA_LOCALE_CATEGORIES); do \
 	    if test -n "$$lc"; then \
 	      if (cd $(DESTDIR)$(localedir)/$$lang && LC_ALL=C ls -l -d $$lc 2>/dev/null) | grep ' -> ' >/dev/null; then \
@@ -278,30 +228,28 @@ install-data-yes: all
 	      ln -s ../LC_MESSAGES/$(DOMAIN).mo $(DESTDIR)$(localedir)/$$lang/$$lc/$(DOMAIN).mo 2>/dev/null || \
 	      ln $(DESTDIR)$(localedir)/$$lang/LC_MESSAGES/$(DOMAIN).mo $(DESTDIR)$(localedir)/$$lang/$$lc/$(DOMAIN).mo 2>/dev/null || \
 	      cp -p $(DESTDIR)$(localedir)/$$lang/LC_MESSAGES/$(DOMAIN).mo $(DESTDIR)$(localedir)/$$lang/$$lc/$(DOMAIN).mo; \
-	      echo "installing $$realcat link as $(DESTDIR)$(localedir)/$$lang/$$lc/$(DOMAIN).mo"; \
+	      echo "installing $$realcat link as $(DESTDIR)$(localedir)/$$lang/$$lc/$(DOMAIN).mo">/dev/null; \
 	    fi; \
 	  done; \
 	done
-
 install-strip: install
-
 installdirs: installdirs-exec installdirs-data
 installdirs-exec:
 installdirs-data: installdirs-data-yes
 	if test "$(PACKAGE)" = "gettext"; then \
-	  $(mkinstalldirs) $(DESTDIR)$(gettextsrcdir); \
+	  $(mkinstalldirs) $(DESTDIR)$(gettextsrcdir)>/dev/null; \
 	else \
 	  : ; \
 	fi
 installdirs-data-no:
 installdirs-data-yes:
-	$(mkinstalldirs) $(DESTDIR)$(datadir)
+	$(mkinstalldirs) $(DESTDIR)$(datadir)>/dev/null
 	@catalogs='$(CATALOGS)'; \
 	for cat in $$catalogs; do \
 	  cat=`basename $$cat`; \
 	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
 	  dir=$(localedir)/$$lang/LC_MESSAGES; \
-	  $(mkinstalldirs) $(DESTDIR)$$dir; \
+	  $(mkinstalldirs) $(DESTDIR)$$dir>/dev/null; \
 	  for lc in '' $(EXTRA_LOCALE_CATEGORIES); do \
 	    if test -n "$$lc"; then \
 	      if (cd $(DESTDIR)$(localedir)/$$lang && LC_ALL=C ls -l -d $$lc 2>/dev/null) | grep ' -> ' >/dev/null; then \
@@ -326,15 +274,13 @@ installdirs-data-yes:
 	    fi; \
 	  done; \
 	done
-
-# Define this as empty until I found a useful application.
 installcheck:
-
 uninstall: uninstall-exec uninstall-data
 uninstall-exec:
 uninstall-data: uninstall-data-yes
 	if test "$(PACKAGE)" = "gettext"; then \
 	  for file in $(DISTFILES.common); do \
+	echo "Uninstalling $(gettextsrcdir)/$$file"; \
 	    rm -f $(DESTDIR)$(gettextsrcdir)/$$file; \
 	  done; \
 	else \
@@ -347,35 +293,28 @@ uninstall-data-yes:
 	  cat=`basename $$cat`; \
 	  lang=`echo $$cat | sed -e 's/\.gmo$$//'`; \
 	  for lc in LC_MESSAGES $(EXTRA_LOCALE_CATEGORIES); do \
+	echo "Uninstalling $(localedir)/$$lang/$$lc/$(DOMAIN).mo"; \
 	    rm -f $(DESTDIR)$(localedir)/$$lang/$$lc/$(DOMAIN).mo; \
 	  done; \
 	done
-
 check: all
-
 dvi info tags TAGS ID:
-
 mostlyclean:
 	rm -f remove-potcdate.sed
 	rm -f core core.* $(DOMAIN).po $(DOMAIN).1po $(DOMAIN).2po *.new.po
 	rm -fr *.o
-
 clean: mostlyclean
 	rm -f *.gmo
-
 distclean: clean
 	rm -f Makefile Makefile.in POTFILES *.mo
-
 maintainer-clean: distclean
-	@echo "This command is intended for maintainers to use;"
-	@echo "it deletes files that may require special tools to rebuild."
+	@echo "This command is intended for maintainers to use>/dev/null;"
+	@echo "it deletes files that may require special tools to rebuild.">/dev/null
 	rm -f $(GMOFILES)
-
 distdir = $(top_builddir)/$(PACKAGE)-$(VERSION)/$(subdir)
 dist distdir:
 	$(MAKE) update-po
 	@$(MAKE) dist2
-# This is a separate target because 'update-po' must be executed before.
 dist2: $(DISTFILES)
 	dists="$(DISTFILES)"; \
 	if test -f $(srcdir)/ChangeLog; then dists="$$dists ChangeLog"; fi; \
@@ -387,23 +326,20 @@ dist2: $(DISTFILES)
 	    cp -p $(srcdir)/$$file $(distdir); \
 	  fi; \
 	done
-
 update-po: Makefile
 	$(MAKE) $(DOMAIN).pot-update
 	$(MAKE) $(UPDATEPOFILES)
 	$(MAKE) update-gmo
-
-# General rule for updating PO files.
-
 .nop.po-update:
+	echo "Updating translation catalog for $(<F:.nop=)"
 	@lang=`echo $@ | sed -e 's/\.po-update$$//'`; \
 	if test "$(PACKAGE)" = "gettext"; then PATH=`pwd`/../src:$$PATH; fi; \
 	tmpdir=`pwd`; \
-	echo "$$lang:"; \
+	echo "$$lang:">/dev/null; \
 	test "$(srcdir)" = . && cdcmd="" || cdcmd="cd $(srcdir) && "; \
-	echo "$${cdcmd}$(MSGMERGE) $$lang.po $(DOMAIN).pot -o $$lang.new.po"; \
+	echo "$${cdcmd}$(MSGMERGE) --silent $$lang.po $(DOMAIN).pot -o $$lang.new.po">/dev/null; \
 	cd $(srcdir); \
-	if $(MSGMERGE) $$lang.po $(DOMAIN).pot -o $$tmpdir/$$lang.new.po; then \
+	if $(MSGMERGE) --silent $$lang.po $(DOMAIN).pot -o $$tmpdir/$$lang.new.po; then \
 	  if cmp $$lang.po $$tmpdir/$$lang.new.po >/dev/null 2>&1; then \
 	    rm -f $$tmpdir/$$lang.new.po; \
 	  else \
@@ -418,36 +354,24 @@ update-po: Makefile
 	  echo "msgmerge for $$lang.po failed!" 1>&2; \
 	  rm -f $$tmpdir/$$lang.new.po; \
 	fi
-
 $(DUMMYPOFILES):
-
 update-gmo: Makefile $(GMOFILES)
 	@:
-
 Makefile: Makefile.in.in $(top_builddir)/config.status POTFILES.in
 	cd $(top_builddir) \
 	  && CONFIG_FILES=$(subdir)/$@.in CONFIG_HEADERS= \
 	       $(SHELL) ./config.status
-
 force:
-
-# Tell versions [3.59,3.63) of GNU make not to export all variables.
-# Otherwise a system limit (for SysV at least) may be exceeded.
 .NOEXPORT:
-# Special Makefile rules for English message catalogs with quotation marks.
-
 DISTFILES.common.extra1 = quot.sed boldquot.sed en@quot.header en@boldquot.header insert-header.sin Rules-quot
-
 .SUFFIXES: .insert-header .po-update-en
-
 en@quot.po-update: en@quot.po-update-en
 en@boldquot.po-update: en@boldquot.po-update-en
-
 .insert-header.po-update-en:
 	@lang=`echo $@ | sed -e 's/\.po-update-en$$//'`; \
 	if test "$(PACKAGE)" = "gettext"; then PATH=`pwd`/../src:$$PATH; GETTEXTLIBDIR=`cd $(top_srcdir)/src && pwd`; export GETTEXTLIBDIR; fi; \
 	tmpdir=`pwd`; \
-	echo "$$lang:"; \
+	echo "$$lang:">/dev/null; \
 	ll=`echo $$lang | sed -e 's/@.*//'`; \
 	LC_ALL=C; export LC_ALL; \
 	cd $(srcdir); \
@@ -466,13 +390,10 @@ en@boldquot.po-update: en@boldquot.po-update-en
 	  echo "creation of $$lang.po failed!" 1>&2; \
 	  rm -f $$tmpdir/$$lang.new.po; \
 	fi
-
 en@quot.insert-header: insert-header.sin
 	sed -e '/^#/d' -e 's/HEADER/en@quot.header/g' $(srcdir)/insert-header.sin > en@quot.insert-header
-
 en@boldquot.insert-header: insert-header.sin
 	sed -e '/^#/d' -e 's/HEADER/en@boldquot.header/g' $(srcdir)/insert-header.sin > en@boldquot.insert-header
-
 mostlyclean: mostlyclean-quot
 mostlyclean-quot:
 	rm -f *.insert-header

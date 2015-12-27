@@ -68,7 +68,7 @@ configure:3893: found /usr/bin/g++
 configure:3904: result: g++
 configure:3931: checking for C++ compiler version
 configure:3940: g++ --version >&5
-g++ (GCC) 5.2.0
+g++ (GCC) 5.3.0
 Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -77,11 +77,11 @@ configure:3951: $? = 0
 configure:3940: g++ -v >&5
 Using built-in specs.
 COLLECT_GCC=g++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/lto-wrapper
 Target: x86_64-unknown-linux-gnu
-Configured with: /build/gcc/src/gcc-5.2.0/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release --with-default-libstdcxx-abi=gcc4-compatible
+Configured with: /build/gcc/src/gcc-5.3.0/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
 Thread model: posix
-gcc version 5.2.0 (GCC) 
+gcc version 5.3.0 (GCC) 
 configure:3951: $? = 0
 configure:3940: g++ -V >&5
 g++: error: unrecognized command line option '-V'
@@ -168,7 +168,7 @@ configure:4714: found /usr/bin/gcc
 configure:4725: result: gcc
 configure:4954: checking for C compiler version
 configure:4963: gcc --version >&5
-gcc (GCC) 5.2.0
+gcc (GCC) 5.3.0
 Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -177,11 +177,11 @@ configure:4974: $? = 0
 configure:4963: gcc -v >&5
 Using built-in specs.
 COLLECT_GCC=gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/lto-wrapper
 Target: x86_64-unknown-linux-gnu
-Configured with: /build/gcc/src/gcc-5.2.0/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release --with-default-libstdcxx-abi=gcc4-compatible
+Configured with: /build/gcc/src/gcc-5.3.0/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release
 Thread model: posix
-gcc version 5.2.0 (GCC) 
+gcc version 5.3.0 (GCC) 
 configure:4974: $? = 0
 configure:4963: gcc -V >&5
 gcc: error: unrecognized command line option '-V'
@@ -268,11 +268,11 @@ configure:6394: checking lex output file root
 configure:6408: result: lex.yy
 configure:6413: checking lex library
 configure:6427: gcc -o conftest    conftest.c   >&5
-/tmp/ccf24Gr6.o: In function `yylex':
+/tmp/cc4DhOyf.o: In function `yylex':
 conftest.c:(.text+0x6f9): undefined reference to `yywrap'
-/tmp/ccf24Gr6.o: In function `input':
+/tmp/cc4DhOyf.o: In function `input':
 conftest.c:(.text+0x11c8): undefined reference to `yywrap'
-/tmp/ccf24Gr6.o: In function `main':
+/tmp/cc4DhOyf.o: In function `main':
 conftest.c:(.text+0x1e9c): undefined reference to `yywrap'
 collect2: error: ld returned 1 exit status
 configure:6427: $? = 1
@@ -3824,7 +3824,7 @@ configure:12334: $? = 0
 configure:12334: result: yes
 configure:12340: checking for _doprnt
 configure:12340: g++ -o conftest    conftest.cpp  >&5
-/tmp/ccrgSWNF.o: In function `main':
+/tmp/ccw29oxf.o: In function `main':
 conftest.cpp:(.text+0x5): undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:12340: $? = 1
@@ -4475,7 +4475,7 @@ configure:15442: checking for bfd.h
 configure:15442: result: yes
 configure:15454: checking for libraries required to link with bfd
 configure:15486: g++ -o conftest     conftest.cpp   >&5
-/tmp/cck2wUgH.o: In function `main':
+/tmp/ccioN5Um.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -4669,254 +4669,254 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
 (.text+0x140): undefined reference to `xstrerror'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x105c): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x11c7): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
 (.text+0x14f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
 (.text+0x3a5): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
 (.text+0x617): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
 (.text+0x73f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
 (.text+0x7fc): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
 (.text+0x9e8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
 (.text+0xa7b): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
 (.text+0xcbb): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
 (.text+0xeba): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
 (.text+0xfe9): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
 (.text+0x13e5): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
 (.text+0x1507): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
 (.text+0x10e8): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
 (.text+0x2fc): undefined reference to `_sch_toupper'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0x6ce): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0xbdd): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
 (.text+0x9): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0x3f): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0xd1): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
 (.text+0x21f): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
 (.text+0x402): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
 (.text+0x5ff): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
 (.text+0x5cb): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
 (.text+0x832): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
 (.text+0xee6): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x110d): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x1297): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x13a1): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x19bf): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x1a4b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
 (.text+0x1b53): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
 (.text+0xa7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
 (.text+0x6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
 (.text+0xb6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
 (.text+0x5d6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
 (.text+0xbbf): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
 (.text+0x1017): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
 (.text+0x111a): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
 (.text+0x666): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x7d1): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x993): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
 (.text+0x11f9): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x2c): undefined reference to `compressBound'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x57): undefined reference to `compress'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x26f): undefined reference to `inflateInit_'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x294): undefined reference to `inflateReset'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2ca): undefined reference to `inflate'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2da): undefined reference to `inflateEnd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
 (.text+0x552): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
 (.text+0x19b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
 (.text+0xa31): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
 (.text+0x202e): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x325d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x326e): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3334): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3340): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x38c0): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x3996): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
 (.text+0x27f8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xa4cc): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xab8f): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xbd6c): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xc553): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1eb9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ec9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ef3): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f03): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f13): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1fea): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x22be): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
 (.text+0x235a): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
 (.text+0xc4c): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
 (.text+0x21e2): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31bd): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31ce): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3236): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3242): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x341a): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x34ee): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
 (.text+0x283e): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
 (.text+0x6f56): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
 (.text+0xac7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
 (.text+0x1abd): undefined reference to `xmalloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x2f5): undefined reference to `dlopen'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x30d): undefined reference to `dlsym'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x463): undefined reference to `dlerror'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x581): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x59a): undefined reference to `make_relative_prefix'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x5f0): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1e5): undefined reference to `getpwd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1f2): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x204): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x290): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
 (.text+0x77c): undefined reference to `htab_find'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x7f6): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x844): undefined reference to `htab_create_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
 (.text+0xa5e): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
 (.text+0xc57): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd63): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd97): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xef8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1b84): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1bde): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1c16): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1cf4): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1db5): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1e5a): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
 (.text+0x2125): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2243): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2254): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
 (.text+0x2442): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
 (.text+0x2541): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
 (.text+0x25b2): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38a4): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38d1): undefined reference to `htab_clear_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x3955): undefined reference to `htab_traverse_noresize'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x395d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
 (.text+0xf9): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
 (.text+0x360): undefined reference to `unlink_if_ordinary'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
 (.text+0x16f): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
 (.text+0x6b7): undefined reference to `_sch_istable'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -5109,7 +5109,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty  >&5
-/tmp/ccQeYHzm.o: In function `main':
+/tmp/cck3idfx.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -5303,7 +5303,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -ldl  >&5
-/tmp/ccqhfvdu.o: In function `main':
+/tmp/cczR7FJB.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -5497,7 +5497,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lz  >&5
-/tmp/ccYKu5aB.o: In function `main':
+/tmp/ccSviRyI.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -5691,23 +5691,23 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd -liberty  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x2c): undefined reference to `compressBound'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x57): undefined reference to `compress'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x26f): undefined reference to `inflateInit_'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x294): undefined reference to `inflateReset'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2ca): undefined reference to `inflate'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2da): undefined reference to `inflateEnd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x2f5): undefined reference to `dlopen'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x30d): undefined reference to `dlsym'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x463): undefined reference to `dlerror'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -5900,248 +5900,248 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd -ldl  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
 (.text+0x140): undefined reference to `xstrerror'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x105c): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x11c7): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
 (.text+0x14f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
 (.text+0x3a5): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
 (.text+0x617): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
 (.text+0x73f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
 (.text+0x7fc): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
 (.text+0x9e8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
 (.text+0xa7b): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
 (.text+0xcbb): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
 (.text+0xeba): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
 (.text+0xfe9): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
 (.text+0x13e5): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
 (.text+0x1507): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
 (.text+0x10e8): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
 (.text+0x2fc): undefined reference to `_sch_toupper'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0x6ce): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0xbdd): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
 (.text+0x9): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0x3f): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0xd1): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
 (.text+0x21f): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
 (.text+0x402): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
 (.text+0x5ff): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
 (.text+0x5cb): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
 (.text+0x832): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
 (.text+0xee6): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x110d): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x1297): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x13a1): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x19bf): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x1a4b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
 (.text+0x1b53): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
 (.text+0xa7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
 (.text+0x6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
 (.text+0xb6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
 (.text+0x5d6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
 (.text+0xbbf): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
 (.text+0x1017): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
 (.text+0x111a): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
 (.text+0x666): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x7d1): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x993): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
 (.text+0x11f9): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x2c): undefined reference to `compressBound'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x57): undefined reference to `compress'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x26f): undefined reference to `inflateInit_'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x294): undefined reference to `inflateReset'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2ca): undefined reference to `inflate'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2da): undefined reference to `inflateEnd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
 (.text+0x552): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
 (.text+0x19b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
 (.text+0xa31): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
 (.text+0x202e): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x325d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x326e): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3334): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3340): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x38c0): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x3996): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
 (.text+0x27f8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xa4cc): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xab8f): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xbd6c): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xc553): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1eb9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ec9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ef3): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f03): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f13): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1fea): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x22be): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
 (.text+0x235a): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
 (.text+0xc4c): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
 (.text+0x21e2): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31bd): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31ce): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3236): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3242): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x341a): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x34ee): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
 (.text+0x283e): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
 (.text+0x6f56): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
 (.text+0xac7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
 (.text+0x1abd): undefined reference to `xmalloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x581): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x59a): undefined reference to `make_relative_prefix'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x5f0): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1e5): undefined reference to `getpwd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1f2): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x204): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x290): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
 (.text+0x77c): undefined reference to `htab_find'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x7f6): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x844): undefined reference to `htab_create_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
 (.text+0xa5e): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
 (.text+0xc57): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd63): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd97): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xef8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1b84): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1bde): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1c16): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1cf4): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1db5): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1e5a): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
 (.text+0x2125): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2243): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2254): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
 (.text+0x2442): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
 (.text+0x2541): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
 (.text+0x25b2): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38a4): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38d1): undefined reference to `htab_clear_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x3955): undefined reference to `htab_traverse_noresize'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x395d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
 (.text+0xf9): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
 (.text+0x360): undefined reference to `unlink_if_ordinary'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
 (.text+0x16f): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
 (.text+0x6b7): undefined reference to `_sch_istable'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -6334,242 +6334,242 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd -lz  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
 (.text+0x140): undefined reference to `xstrerror'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x105c): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x11c7): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
 (.text+0x14f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
 (.text+0x3a5): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
 (.text+0x617): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
 (.text+0x73f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
 (.text+0x7fc): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
 (.text+0x9e8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
 (.text+0xa7b): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
 (.text+0xcbb): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
 (.text+0xeba): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
 (.text+0xfe9): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
 (.text+0x13e5): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
 (.text+0x1507): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
 (.text+0x10e8): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
 (.text+0x2fc): undefined reference to `_sch_toupper'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0x6ce): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0xbdd): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
 (.text+0x9): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0x3f): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0xd1): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
 (.text+0x21f): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
 (.text+0x402): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
 (.text+0x5ff): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
 (.text+0x5cb): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
 (.text+0x832): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
 (.text+0xee6): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x110d): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x1297): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x13a1): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x19bf): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x1a4b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
 (.text+0x1b53): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
 (.text+0xa7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
 (.text+0x6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
 (.text+0xb6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
 (.text+0x5d6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
 (.text+0xbbf): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
 (.text+0x1017): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
 (.text+0x111a): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
 (.text+0x666): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x7d1): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x993): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
 (.text+0x11f9): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
 (.text+0x552): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
 (.text+0x19b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
 (.text+0xa31): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
 (.text+0x202e): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x325d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x326e): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3334): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3340): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x38c0): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x3996): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
 (.text+0x27f8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xa4cc): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xab8f): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xbd6c): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xc553): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1eb9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ec9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ef3): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f03): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f13): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1fea): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x22be): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
 (.text+0x235a): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
 (.text+0xc4c): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
 (.text+0x21e2): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31bd): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31ce): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3236): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3242): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x341a): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x34ee): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
 (.text+0x283e): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
 (.text+0x6f56): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
 (.text+0xac7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
 (.text+0x1abd): undefined reference to `xmalloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x2f5): undefined reference to `dlopen'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x30d): undefined reference to `dlsym'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x463): undefined reference to `dlerror'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x581): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x59a): undefined reference to `make_relative_prefix'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x5f0): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1e5): undefined reference to `getpwd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1f2): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x204): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x290): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
 (.text+0x77c): undefined reference to `htab_find'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x7f6): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x844): undefined reference to `htab_create_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
 (.text+0xa5e): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
 (.text+0xc57): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd63): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd97): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xef8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1b84): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1bde): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1c16): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1cf4): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1db5): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1e5a): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
 (.text+0x2125): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2243): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2254): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
 (.text+0x2442): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
 (.text+0x2541): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
 (.text+0x25b2): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38a4): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38d1): undefined reference to `htab_clear_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x3955): undefined reference to `htab_traverse_noresize'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x395d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
 (.text+0xf9): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
 (.text+0x360): undefined reference to `unlink_if_ordinary'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
 (.text+0x16f): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
 (.text+0x6b7): undefined reference to `_sch_istable'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -6762,7 +6762,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty -ldl  >&5
-/tmp/cc13WnRA.o: In function `main':
+/tmp/ccuc3R2h.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -6956,7 +6956,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty -lz  >&5
-/tmp/ccMwfxyK.o: In function `main':
+/tmp/ccHB8vor.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -7150,7 +7150,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -ldl -lz  >&5
-/tmp/ccqGOjYZ.o: In function `main':
+/tmp/cctJ2o0y.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -7344,17 +7344,17 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd -liberty -ldl  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x2c): undefined reference to `compressBound'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_compress_section_contents':
 (.text+0x57): undefined reference to `compress'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x26f): undefined reference to `inflateInit_'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x294): undefined reference to `inflateReset'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2ca): undefined reference to `inflate'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_get_full_section_contents':
 (.text+0x2da): undefined reference to `inflateEnd'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -7547,11 +7547,11 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd -liberty -lz  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x2f5): undefined reference to `dlopen'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x30d): undefined reference to `dlsym'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `try_load_plugin':
 (.text+0x463): undefined reference to `dlerror'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -7744,236 +7744,236 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lbfd -ldl -lz  >&5
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_errmsg':
 (.text+0x140): undefined reference to `xstrerror'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x105c): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(bfd.o): In function `bfd_demangle':
 (.text+0x11c7): undefined reference to `cplus_demangle'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_delete_bfd':
 (.text+0x14f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `find_separate_debug_file':
 (.text+0x3a5): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_new_bfd':
 (.text+0x617): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `_bfd_free_cached_info':
 (.text+0x73f): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fopen':
 (.text+0x7fc): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openstreamr':
 (.text+0x9e8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openw':
 (.text+0xa7b): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create':
 (.text+0xcbb): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_alloc':
 (.text+0xeba): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_openr_iovec':
 (.text+0xfe9): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_create_gnu_debuglink_section':
 (.text+0x13e5): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_fill_in_gnu_debuglink_section':
 (.text+0x1507): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(opncls.o): In function `bfd_release':
 (.text+0x10e8): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `bfd_decode_symclass':
 (.text+0x2fc): undefined reference to `_sch_toupper'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0x6ce): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(syms.o): In function `_bfd_stab_section_find_nearest_line':
 (.text+0xbdd): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_free':
 (.text+0x9): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0x3f): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_table_init_n':
 (.text+0xd1): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_insert':
 (.text+0x21f): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_lookup':
 (.text+0x402): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(hash.o): In function `bfd_hash_allocate':
 (.text+0x5ff): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_mkobject':
 (.text+0x5cb): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_get_section_contents':
 (.text+0x832): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_bad_byte':
 (.text+0xee6): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x110d): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x1297): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_scan':
 (.text+0x13a1): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x19bf): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `srec_object_p':
 (.text+0x1a4b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(srec.o): In function `symbolsrec_object_p':
 (.text+0x1b53): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(binary.o): In function `mangle_name':
 (.text+0xa7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getvalue':
 (.text+0x6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `getsym':
 (.text+0xb6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `first_phase':
 (.text+0x5d6): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_init.part.2':
 (.text+0xbbf): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `pass_over.constprop.4':
 (.text+0x1017): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(tekhex.o): In function `tekhex_object_p':
 (.text+0x111a): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_bad_byte':
 (.text+0x666): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x7d1): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_object_p':
 (.text+0x993): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(ihex.o): In function `ihex_get_section_contents':
 (.text+0x11f9): undefined reference to `_hex_value'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(compress.o): In function `bfd_is_section_compressed':
 (.text+0x552): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(verilog.o): In function `verilog_mkobject':
 (.text+0x19b): undefined reference to `hex_init'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_finish_dynamic_sections':
 (.text+0xa31): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_size_dynamic_sections':
 (.text+0x202e): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x325d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_free':
 (.text+0x326e): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3334): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_link_hash_table_create':
 (.text+0x3340): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x38c0): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64-x86-64.o): In function `elf_x86_64_get_local_sym_hash.isra.5':
 (.text+0x3996): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf64.o): In function `_bfd_elf64_bfd_from_remote_memory':
 (.text+0x27f8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xa4cc): undefined reference to `objalloc_free_block'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_link_add_symbols':
 (.text+0xab8f): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xbd6c): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elflink.o): In function `bfd_elf_size_dynamic_sections':
 (.text+0xc553): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1eb9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ec9): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1ef3): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f03): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1f13): undefined reference to `iterative_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o):(.text+0x1f23): more undefined references to `iterative_hash' follow
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x1fea): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame':
 (.text+0x22be): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf-eh-frame.o): In function `_bfd_elf_discard_section_eh_frame_hdr':
 (.text+0x235a): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_finish_dynamic_sections':
 (.text+0xc4c): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_size_dynamic_sections':
 (.text+0x21e2): undefined reference to `htab_traverse'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31bd): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_free':
 (.text+0x31ce): undefined reference to `objalloc_free'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3236): undefined reference to `htab_try_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_link_hash_table_create':
 (.text+0x3242): undefined reference to `objalloc_create'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x341a): undefined reference to `htab_find_slot_with_hash'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32-i386.o): In function `elf_i386_get_local_sym_hash.isra.4':
 (.text+0x34ee): undefined reference to `_objalloc_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(elf32.o): In function `_bfd_elf32_bfd_from_remote_memory':
 (.text+0x283e): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(aout32.o): In function `aout_32_final_link':
 (.text+0x6f56): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cofflink.o): In function `coff_link_add_object_symbols':
 (.text+0xac7): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(pei-x86_64.o): In function `pex64_bfd_print_pdata_section':
 (.text+0x1abd): undefined reference to `xmalloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x581): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x59a): undefined reference to `make_relative_prefix'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(plugin.o): In function `bfd_plugin_object_p':
 (.text+0x5f0): undefined reference to `concat'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1e5): undefined reference to `getpwd'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x1f2): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x204): undefined reference to `lrealpath'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `adjust_relative_path':
 (.text+0x290): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_look_for_bfd_in_cache':
 (.text+0x77c): undefined reference to `htab_find'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x7f6): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_add_bfd_to_archive_cache':
 (.text+0x844): undefined reference to `htab_create_alloc'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_generic_read_ar_hdr_mag':
 (.text+0xa5e): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_append_relative_path':
 (.text+0xc57): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd63): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xd97): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_get_elt_at_filepos':
 (.text+0xef8): undefined reference to `xstrdup'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1b84): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1bde): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1c16): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1cf4): undefined reference to `filename_ncmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1db5): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_construct_extended_name_table':
 (.text+0x1e5a): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_bsd44_construct_extended_name_table':
 (.text+0x2125): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2243): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_bsd44_write_ar_hdr':
 (.text+0x2254): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_bsd_truncate_arname':
 (.text+0x2442): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_dont_truncate_arname':
 (.text+0x2541): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `bfd_gnu_truncate_arname':
 (.text+0x25b2): undefined reference to `lbasename'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38a4): undefined reference to `htab_find_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x38d1): undefined reference to `htab_clear_slot'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x3955): undefined reference to `htab_traverse_noresize'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archive.o): In function `_bfd_archive_close_and_cleanup':
 (.text+0x395d): undefined reference to `htab_delete'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(archures.o): In function `bfd_default_scan':
 (.text+0xf9): undefined reference to `_sch_istable'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(cache.o): In function `bfd_open_file':
 (.text+0x360): undefined reference to `unlink_if_ordinary'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(corefile.o): In function `generic_core_file_matches_executable_p':
 (.text+0x16f): undefined reference to `filename_cmp'
-/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
+/usr/lib/gcc/x86_64-unknown-linux-gnu/5.3.0/../../../../lib/libbfd.a(stabs.o): In function `_bfd_link_section_stabs':
 (.text+0x6b7): undefined reference to `_sch_istable'
 collect2: error: ld returned 1 exit status
 configure:15486: $? = 1
@@ -8166,7 +8166,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty -ldl -lz  >&5
-/tmp/ccA2P57S.o: In function `main':
+/tmp/ccA0NkaW.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -8611,9 +8611,9 @@ configure:16263: result: no
 configure:16277: checking for docdir
 configure:16282: result: ${datarootdir}/doc/${PACKAGE_TARNAME}
 configure:16287: checking for SVNDATE
-configure:16342: result: rev. g0023527+
+configure:16342: result: None required
 configure:16365: checking denoising level
-configure:16380: result: 0
+configure:16380: result: 4
 configure:16404: checking whether ccache support should be added
 configure:16406: result: no
 configure:16626: checking that generated files are newer than configure
@@ -8635,43 +8635,44 @@ generated by GNU Autoconf 2.69.  Invocation command line was
 
 on i7hl
 
-config.status:1237: creating Makefile
-config.status:1237: creating docs/Makefile
-config.status:1237: creating docs/man/Makefile
-config.status:1237: creating intl/Makefile
-config.status:1237: creating po/Makefile.in
-config.status:1237: creating src/Makefile
-config.status:1237: creating src/pixmaps/Makefile
-config.status:1237: creating src/pixmaps/flags_xpm/Makefile
-config.status:1237: creating src/libs/Makefile
-config.status:1237: creating src/libs/ec/Makefile
-config.status:1237: creating src/libs/ec/cpp/Makefile
-config.status:1237: creating src/libs/common/Makefile
-config.status:1237: creating src/utils/Makefile
-config.status:1237: creating src/utils/aLinkCreator/Makefile
-config.status:1237: creating src/utils/aLinkCreator/docs/Makefile
-config.status:1237: creating src/utils/aLinkCreator/src/Makefile
-config.status:1237: creating src/utils/cas/Makefile
-config.status:1237: creating src/utils/cas/docs/Makefile
-config.status:1237: creating src/utils/fileview/Makefile
-config.status:1237: creating src/utils/plasmamule/Makefile
-config.status:1237: creating src/utils/wxCas/Makefile
-config.status:1237: creating src/utils/wxCas/docs/Makefile
-config.status:1237: creating src/utils/wxCas/src/Makefile
-config.status:1237: creating src/utils/xas/Makefile
-config.status:1237: creating src/utils/xas/autostart-xas
-config.status:1237: creating src/utils/xas/docs/Makefile
-config.status:1237: creating src/skins/Makefile
-config.status:1237: creating src/webserver/Makefile
-config.status:1237: creating src/webserver/src/Makefile
-config.status:1237: creating src/webserver/default/Makefile
-config.status:1237: creating unittests/Makefile
-config.status:1237: creating unittests/muleunit/Makefile
-config.status:1237: creating unittests/tests/Makefile
-config.status:1237: creating config.h
-config.status:1466: executing depfiles commands
-config.status:1466: executing default-1 commands
-config.status:1466: executing denoiser commands
+config.status:1236: creating Makefile
+config.status:1236: creating docs/Makefile
+config.status:1236: creating docs/man/Makefile
+config.status:1236: creating intl/Makefile
+config.status:1236: creating po/Makefile.in
+config.status:1236: creating src/Makefile
+config.status:1236: creating src/pixmaps/Makefile
+config.status:1236: creating src/pixmaps/flags_xpm/Makefile
+config.status:1236: creating src/libs/Makefile
+config.status:1236: creating src/libs/ec/Makefile
+config.status:1236: creating src/libs/ec/cpp/Makefile
+config.status:1236: creating src/libs/common/Makefile
+config.status:1236: creating src/utils/Makefile
+config.status:1236: creating src/utils/aLinkCreator/Makefile
+config.status:1236: creating src/utils/aLinkCreator/docs/Makefile
+config.status:1236: creating src/utils/aLinkCreator/src/Makefile
+config.status:1236: creating src/utils/cas/Makefile
+config.status:1236: creating src/utils/cas/docs/Makefile
+config.status:1236: creating src/utils/fileview/Makefile
+config.status:1236: creating src/utils/plasmamule/Makefile
+config.status:1236: creating src/utils/wxCas/Makefile
+config.status:1236: creating src/utils/wxCas/docs/Makefile
+config.status:1236: creating src/utils/wxCas/src/Makefile
+config.status:1236: creating src/utils/xas/Makefile
+config.status:1236: creating src/utils/xas/autostart-xas
+config.status:1236: creating src/utils/xas/docs/Makefile
+config.status:1236: creating src/skins/Makefile
+config.status:1236: creating src/webserver/Makefile
+config.status:1236: creating src/webserver/src/Makefile
+config.status:1236: creating src/webserver/default/Makefile
+config.status:1236: creating unittests/Makefile
+config.status:1236: creating unittests/muleunit/Makefile
+config.status:1236: creating unittests/tests/Makefile
+config.status:1236: creating config.h
+config.status:1417: config.h is unchanged
+config.status:1465: executing depfiles commands
+config.status:1465: executing default-1 commands
+config.status:1465: executing denoiser commands
 
 ## ---------------- ##
 ## Cache variables. ##
@@ -8924,7 +8925,7 @@ nls_cv_use_gnu_gettext=no
 ## Output variables. ##
 ## ----------------- ##
 
-ACLOCAL='${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing aclocal-1.15'
+ACLOCAL='${SHELL} /home/hlechner/git/hl-test/amule/missing aclocal-1.15'
 ALCC_FALSE=''
 ALCC_MANPAGES=''
 ALCC_TRUE='#'
@@ -8949,9 +8950,9 @@ AM_DEFAULT_V='$(AM_DEFAULT_VERBOSITY)'
 AM_DEFAULT_VERBOSITY='1'
 AM_V='$(V)'
 AR='ar'
-AUTOCONF='${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing autoconf'
-AUTOHEADER='${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing autoheader'
-AUTOMAKE='${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing automake-1.15'
+AUTOCONF='${SHELL} /home/hlechner/git/hl-test/amule/missing autoconf'
+AUTOHEADER='${SHELL} /home/hlechner/git/hl-test/amule/missing autoheader'
+AUTOMAKE='${SHELL} /home/hlechner/git/hl-test/amule/missing automake-1.15'
 AWK='gawk'
 BFD_CPPFLAGS='-DHAVE_BFD'
 BFD_LIBS='-lbfd -liberty -ldl -lz'
@@ -9063,7 +9064,7 @@ LTLIBOBJS=''
 MAINT='#'
 MAINTAINER_MODE_FALSE=''
 MAINTAINER_MODE_TRUE='#'
-MAKEINFO='${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing makeinfo'
+MAKEINFO='${SHELL} /home/hlechner/git/hl-test/amule/missing makeinfo'
 MKDIR_P='/usr/bin/mkdir -p'
 MKINSTALLDIRS='./mkinstalldirs'
 MONOLITHIC_FALSE='#'
@@ -9075,7 +9076,7 @@ MULECFLAGS=' -g -W -Wall -Wshadow -Wundef -ggdb -fno-inline -fmessage-length=0'
 MULECPPFLAGS=' -D__DEBUG__ -DUSE_WX_EXTENSIONS'
 MULECXXFLAGS=' -g -W -Wall -Wshadow -Wundef -ggdb -fno-inline -fmessage-length=0'
 MULELDFLAGS=' -lpthread'
-MULERCFLAGS='-I/usr/lib/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__  -D__PRERELEASE__'
+MULERCFLAGS='-I/usr/lib/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ '
 NEED_CORESERVICES_FALSE=''
 NEED_CORESERVICES_TRUE='#'
 NEED_RC_FALSE=''
@@ -9109,7 +9110,7 @@ SED='/usr/bin/sed'
 SET_MAKE=''
 SHELL='/bin/sh'
 STRIP='strip'
-SVNDATE='rev. g0023527+'
+SVNDATE=''
 SYS_WIN32_FALSE=''
 SYS_WIN32_TRUE='#'
 USE_INCLUDED_LIBINTL='no'
@@ -9181,7 +9182,7 @@ host_vendor='unknown'
 htmldir='${docdir}'
 includedir='${prefix}/include'
 infodir='${datarootdir}/info'
-install_sh='${SHELL} /home/hlechner/Downloads/amule_sources/amule/install-sh'
+install_sh='${SHELL} /home/hlechner/git/hl-test/amule/install-sh'
 libdir='${exec_prefix}/lib'
 libexecdir='${exec_prefix}/libexec'
 localedir='${datarootdir}/locale'
@@ -9378,6 +9379,5 @@ target_alias=''
 #define HAVE_EXECINFO 1
 #define HAVE_DECL_STRERROR_R 1
 #define HAVE_STRERROR_R 1
-#define SVNDATE "rev. g0023527+"
 
 configure: exit 0

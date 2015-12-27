@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/hlechner/Downloads/amule_sources/amule'
+ac_pwd='/home/hlechner/git/hl-test/amule'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
@@ -547,7 +547,7 @@ AMDEP_TRUE="" ac_aux_dir="."
     # Capture the value of LINGUAS because we need it to compute CATALOGS.
     LINGUAS="%UNSET%"
 
-denoiserlevel=0
+denoiserlevel=4
 
 
 # Handling of arguments.
@@ -678,7 +678,7 @@ S["NEED_RC_FALSE"]=""
 S["NEED_RC_TRUE"]="#"
 S["SYS_WIN32_FALSE"]=""
 S["SYS_WIN32_TRUE"]="#"
-S["SVNDATE"]="rev. g0023527+"
+S["SVNDATE"]=""
 S["READLINE_LIBS"]=""
 S["DEBUGFLAG"]=""
 S["KDE_MIME_PATH"]=""
@@ -845,7 +845,7 @@ S["CPPFLAGS"]=""
 S["LDFLAGS"]=""
 S["CXXFLAGS"]=""
 S["CXX"]="g++"
-S["MULERCFLAGS"]="-I/usr/lib/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__  -D__PRERELEASE__"
+S["MULERCFLAGS"]="-I/usr/lib/wx/include/gtk2-unicode-3.0 -I/usr/include/wx-3.0 -D_FILE_OFFSET_BITS=64 -DWXUSINGDLL -D__WXGTK__ "
 S["MULELDFLAGS"]=" -lpthread"
 S["MULECXXFLAGS"]=" -g -W -Wall -Wshadow -Wundef -ggdb -fno-inline -fmessage-length=0"
 S["MULECFLAGS"]=" -g -W -Wall -Wshadow -Wundef -ggdb -fno-inline -fmessage-length=0"
@@ -876,12 +876,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /home/hlechner/Downloads/amule_sources/amule/install-sh"
-S["MAKEINFO"]="${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing automake-1.15"
-S["AUTOCONF"]="${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/hlechner/Downloads/amule_sources/amule/missing aclocal-1.15"
+S["install_sh"]="${SHELL} /home/hlechner/git/hl-test/amule/install-sh"
+S["MAKEINFO"]="${SHELL} /home/hlechner/git/hl-test/amule/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/hlechner/git/hl-test/amule/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/hlechner/git/hl-test/amule/missing automake-1.15"
+S["AUTOCONF"]="${SHELL} /home/hlechner/git/hl-test/amule/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/hlechner/git/hl-test/amule/missing aclocal-1.15"
 S["VERSION"]="SVN"
 S["PACKAGE"]="amule"
 S["CYGPATH_W"]="echo"
@@ -1146,7 +1146,6 @@ D["HAVE_BFD_H"]=" 1"
 D["HAVE_EXECINFO"]=" 1"
 D["HAVE_DECL_STRERROR_R"]=" 1"
 D["HAVE_STRERROR_R"]=" 1"
-D["SVNDATE"]=" \"rev. g0023527+\""
   for (key in D) D_is_set[key] = 1
   FS = ""
 }

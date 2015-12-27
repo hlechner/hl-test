@@ -528,7 +528,7 @@
 /* #undef SUPPORT_GEOIP */
 
 /* The checkout date or svn revision number. */
-#define SVNDATE "rev. g0023527+"
+/* #undef SVNDATE */
 
 /* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
 #define TIME_WITH_SYS_TIME 1
