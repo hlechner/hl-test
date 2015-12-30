@@ -268,11 +268,11 @@ configure:6394: checking lex output file root
 configure:6408: result: lex.yy
 configure:6413: checking lex library
 configure:6427: gcc -o conftest    conftest.c   >&5
-/tmp/cc4DhOyf.o: In function `yylex':
+/tmp/ccRUPdvZ.o: In function `yylex':
 conftest.c:(.text+0x6f9): undefined reference to `yywrap'
-/tmp/cc4DhOyf.o: In function `input':
+/tmp/ccRUPdvZ.o: In function `input':
 conftest.c:(.text+0x11c8): undefined reference to `yywrap'
-/tmp/cc4DhOyf.o: In function `main':
+/tmp/ccRUPdvZ.o: In function `main':
 conftest.c:(.text+0x1e9c): undefined reference to `yywrap'
 collect2: error: ld returned 1 exit status
 configure:6427: $? = 1
@@ -3824,7 +3824,7 @@ configure:12334: $? = 0
 configure:12334: result: yes
 configure:12340: checking for _doprnt
 configure:12340: g++ -o conftest    conftest.cpp  >&5
-/tmp/ccw29oxf.o: In function `main':
+/tmp/cc0HfTu1.o: In function `main':
 conftest.cpp:(.text+0x5): undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:12340: $? = 1
@@ -4475,7 +4475,7 @@ configure:15442: checking for bfd.h
 configure:15442: result: yes
 configure:15454: checking for libraries required to link with bfd
 configure:15486: g++ -o conftest     conftest.cpp   >&5
-/tmp/ccioN5Um.o: In function `main':
+/tmp/cca3NkT5.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -5109,7 +5109,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty  >&5
-/tmp/cck3idfx.o: In function `main':
+/tmp/ccJkfZ2j.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -5303,7 +5303,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -ldl  >&5
-/tmp/cczR7FJB.o: In function `main':
+/tmp/ccv89X4q.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -5497,7 +5497,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -lz  >&5
-/tmp/ccSviRyI.o: In function `main':
+/tmp/cccWdOeA.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -6762,7 +6762,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty -ldl  >&5
-/tmp/ccuc3R2h.o: In function `main':
+/tmp/ccCMbcwX.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -6956,7 +6956,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty -lz  >&5
-/tmp/ccHB8vor.o: In function `main':
+/tmp/ccGrKYG6.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -7150,7 +7150,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -ldl -lz  >&5
-/tmp/cctJ2o0y.o: In function `main':
+/tmp/ccb8D6Da.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
@@ -8166,7 +8166,7 @@ configure: failed program was:
 | }
 | 
 configure:15486: g++ -o conftest     conftest.cpp -liberty -ldl -lz  >&5
-/tmp/ccA0NkaW.o: In function `main':
+/tmp/ccADqQgC.o: In function `main':
 conftest.cpp:(.text+0x9): undefined reference to `bfd_get_error'
 conftest.cpp:(.text+0x10): undefined reference to `bfd_errmsg'
 collect2: error: ld returned 1 exit status
